@@ -55,6 +55,13 @@ public class TestBankService {
 	 * @AfterEach public void clear() { System.out.println("TestBankService.clear");
 	 * service=null; }
 	 */
+	@Test
+	public void testCalcSimpleInterestAmtNoException() {
+		System.out.println("TestBankService.testCalcSimpleInterestAmtNoException");
+		Assertions.assertDoesNotThrow(()->{
+			service.calcSimpleInterestAmt(100000, 2, 12);
+		});
+	}
 	@AfterAll
 	public static void clearOnce() {
 		System.out.println("TestBankService.clearOnce");
