@@ -52,7 +52,7 @@ public class TestBankService {
 		});
 	}
 	@Test
-	public void testCalcSimpleInterestAmtNoException() {
+	public void testCalcSimpleInterestAmtNoExceptionFound() {
 		System.out.println("TestBankService.testCalcSimpleInterestAmtNoException");
 		Assertions.assertDoesNotThrow(()->{
 			service.calcSimpleInterestAmt(100000, 2, 12);
