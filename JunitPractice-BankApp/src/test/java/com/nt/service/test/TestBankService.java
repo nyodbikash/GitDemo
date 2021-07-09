@@ -62,6 +62,7 @@ public class TestBankService {
 	 * @AfterEach public void clear() { System.out.println("TestBankService.clear");
 	 * service=null; }
 	 */
+
 	@AfterAll
 	public static void clearOnce() {
 		System.out.println("TestBankService.clearOnce");
